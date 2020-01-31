@@ -3,7 +3,22 @@
 
 // 1. countWords
 function countWords(phrase) {
-  // Replace this with your code
+  const words = {};
+  const list = phrase.split(' ');
+  
+  for(let word of list){
+    
+    if (words[word] == undefined) {
+      //console.log(word);
+      words[word] = 1;
+    }
+    else {
+      console.log(word);
+      words[word] += 1;
+    }
+  }
+
+  return words;
 }
 
 
